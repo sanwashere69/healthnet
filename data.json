@@ -1,0 +1,20 @@
+[
+  {
+    "name": "City Health Clinic",
+    "location": "Delhi",
+    "type": "Clinic",
+    "status": "Active"
+  },
+  {
+    "name": "Green Valley Hospital",
+    "location": "Mumbai",
+    "type": "Hospital",
+    "status": "Active"
+  },
+  {
+    "name": "Healing Touch Center",
+    "location": "Bangalore",
+    "type": "Diagnostic Lab",
+    "status": "Inactive"
+  }
+]
