@@ -1,0 +1,22 @@
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const list = document.getElementById('hospital-list');
+
+    data.forEach(hospital => {
+      const card = document.createElement('div');
+      card.className = 'hospital-card';
+
+      card.innerHTML = `
+        <h3>${hospital.name}</h3>
+        <p><strong>Location:</strong> ${hospital.location}</p>
+        <p><strong>Type:</strong> ${hospital.type}</p>
+        <p><strong>Status:</strong> ${hospital.status}</p>
+      `;
+
+      list.appendChild(card);
+    });
+  })
+  .catch(err => {
+    console.error("Error loading hospital data:", err);
+  });
